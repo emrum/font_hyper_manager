@@ -19,6 +19,17 @@ using a graphical interface built with Tkinter and FreeType.
 
 
 
+## using it
+
+- first click "show paths"
+- in the menu/tools/ add default font paths (system dependent)
+- add user paths using "add path" button
+- scan font directories
+- add fonts to any category
+- install category
+- in the app, press F1 or F2 for more help info
+
+
 # License
 GPL v3
 
