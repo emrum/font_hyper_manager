@@ -1,0 +1,12 @@
+
+## NOTE: $HOME variable might not be available, when run from menu, replace with actual path 
+## copy file to $HOME/.local/share/applications/  or better use: xdg-menu-desktop install filename.desktiop --novendor
+[Desktop Entry]
+Name=Font Hyper Manager
+Exec=$HOME/apps/font_hyper_manager/run.sh
+Icon=$HOME/apps/font_hyper_manager/font_hyper_icon.png
+Type=Application
+GenericName=Font Manager
+Comment=python and tkinter based file manager
+StartupNotify=true
+Categories=Utility;Application;

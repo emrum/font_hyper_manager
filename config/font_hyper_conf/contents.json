@@ -1,0 +1,212 @@
+{
+    "font_paths_predefined": [],
+    "font_paths_user": [],
+    "categories": {
+        "Favorites": {
+            "idx": "1735557438.3653283",
+            "label": "Favorites",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "",
+            "license": "",
+            "is_installed": false,
+            "category_icon_file": "fh_star.png",
+            "preview_image": null,
+            "preview_image_size": [
+                0,
+                0
+            ],
+            "preview_font_size": 24
+        },
+        "Futuristic": {
+            "idx": "1735557438.3653562",
+            "label": "Futuristic",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_futur_b.png",
+            "preview_image": null,
+            "preview_image_size": [
+                438,
+                44
+            ],
+            "preview_font_size": 24
+        },
+        "Antique": {
+            "idx": "1735557438.3653803",
+            "label": "Antique",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_antique.png",
+            "preview_image": null,
+            "preview_image_size": [
+                172,
+                44
+            ],
+            "preview_font_size": 24
+        },
+        "Expanded": {
+            "idx": "210c9213-6f83-4dc7-aba9-fae3e96abd12",
+            "label": "Expanded",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_expanded.png",
+            "preview_image": null,
+            "preview_image_size": [
+                288,
+                29
+            ],
+            "preview_font_size": 24
+        },
+        "Rugged": {
+            "idx": "8833efbf-0d18-47c1-b445-616d215bc9ee",
+            "label": "Rugged",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_rugged.png",
+            "preview_image": null,
+            "preview_image_size": [
+                180,
+                43
+            ],
+            "preview_font_size": 24
+        },
+        "Thin": {
+            "idx": "5587329c-5de6-4cc4-91ec-70ad37b90c0b",
+            "label": "Thin",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_thin.png",
+            "preview_image": null,
+            "preview_image_size": [
+                190,
+                44
+            ],
+            "preview_font_size": 24
+        },
+        "Handwritten": {
+            "idx": "c7caaa9c-6af9-4607-be61-61b5f06cd746",
+            "label": "Handwritten",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_handwritten.png",
+            "preview_image": null,
+            "preview_image_size": [
+                161,
+                54
+            ],
+            "preview_font_size": 24
+        },
+        "Fat": {
+            "idx": "afe591c6-8423-4c9f-b336-ded6fa88b532",
+            "label": "Fat",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_fat.png",
+            "preview_image": null,
+            "preview_image_size": [
+                268,
+                41
+            ],
+            "preview_font_size": 24
+        },
+        "Rounded": {
+            "idx": "909571fb-6a9c-48f1-b5ae-689c0e8861c2",
+            "label": "Rounded",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_rounded_d.png",
+            "preview_image": null,
+            "preview_image_size": [
+                265,
+                39
+            ],
+            "preview_font_size": 24
+        },
+        "Outline": {
+            "idx": "5aadf3f4-8706-4808-976a-bda9fe50ccf5",
+            "label": "Outline",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_outline.png",
+            "preview_image": null,
+            "preview_image_size": [
+                0,
+                0
+            ],
+            "preview_font_size": 24
+        },
+        "Regular Sans": {
+            "idx": "fef2f7be-f367-424d-a4f4-5a689f269cbb",
+            "label": "Regular Sans",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "Not available.",
+            "license": "Not available",
+            "is_installed": false,
+            "category_icon_file": "fh_sans_b.png",
+            "preview_image": null,
+            "preview_image_size": [
+                317,
+                37
+            ],
+            "preview_font_size": 24
+        },
+        "Regular Serif": {
+            "idx": "a5c6dbe3-b240-47bd-b59c-a54585e28159",
+            "label": "Regular Serif",
+            "image_path": "",
+            "fonts_list": [],
+            "user_note": "",
+            "font_info": "",
+            "license": "",
+            "is_installed": false,
+            "category_icon_file": "fh_serif_b.png",
+            "preview_image": null,
+            "preview_image_size": [
+                0,
+                0
+            ],
+            "preview_font_size": 24
+        }
+    },
+    "render_text": " \u00c4gypter trag\u00e8n Avokado (zum L\u00eeft)! @ $ \u20ac \u00a5 % \u00bb\u00ab\u2192\u2193\u2191\u2190^*#",
+    "font_color": "#265179"
+}
