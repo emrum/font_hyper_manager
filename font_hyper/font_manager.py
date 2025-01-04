@@ -11,7 +11,7 @@ class FontManager:
     def __init__(self):
         self.font_paths_predefined = ['/usr/share/fonts/TTF']
         self.font_paths_user = []
-        self.font_install_path = os.path.expanduser('~/.local/share/fonts/font_mang/')
+        self.font_install_path = os.path.expanduser('~/.local/share/fonts/font_hyper/')
         self.fonts = []  # List of FontInfo objects
         self.categories = {}  # category_name: FontCategory instance
         self._font_paths_set = set()  # Helper set to track unique font paths
@@ -79,7 +79,7 @@ class FontManager:
         return {
             'font_paths_predefined': self.font_paths_predefined,
             'font_paths_user': self.font_paths_user,
-            'font_install_path': self.font_install_path,
+             #'font_install_path': self.font_install_path, # do not save install path
              #'fonts': unique_fonts, # set fonts saving to INACTIVE, disabled
             'categories': {
                 cat: self.categories[cat].to_dict()
@@ -91,7 +91,9 @@ class FontManager:
         """Deserialize FontManager from a dictionary, ensuring unique font paths."""
         self.font_paths_predefined = data.get('font_paths_predefined', ['/usr/share/fonts/TTF'])
         self.font_paths_user = data.get('font_paths_user', [])
-        self.font_install_path = os.path.expanduser(data.get('font_install_path', '~/.local/share/fonts/font_mang/'))
+
+        ## do not load install path, use path from config
+        #self.font_install_path = os.path.expanduser(data.get('font_install_path', '~/.local/share/fonts/font_mang/'))
         
         # Reset the font paths set and fonts list
         self._font_paths_set = set()
