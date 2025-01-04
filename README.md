@@ -30,7 +30,7 @@ using a graphical interface built with Tkinter and FreeType.
 - in the app, press F1 or F2 for more help info
 
 
-# License
+## License
 GPL v3
 
 
