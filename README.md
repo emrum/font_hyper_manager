@@ -3,6 +3,8 @@
 
 # Font Hyper
 
+Currently for Linux Only - A font manager with Categories support and preview.
+
 Font Hyper is a Python application that allows users to manage and categorize fonts 
 using a graphical interface built with Tkinter and FreeType.
 
