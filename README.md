@@ -33,7 +33,4 @@ using a graphical interface built with Tkinter and FreeType.
 # License
 GPL v3
 
-# Authors
-© 2024 Emanuel Rumpf, em-rumpf[AT]gmx.de
-coworker: AI
 
