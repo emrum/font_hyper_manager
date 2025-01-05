@@ -3,6 +3,11 @@
 LOG_FILE="log.txt"
 
 
+## change to directory, adjust paths 
+#############################################
+#$user_name = "unknown"
+#cd /home/$user_name/apps/font_hyper_manager/
+
 
 ## setup python environment, if required 
 ###########################################
