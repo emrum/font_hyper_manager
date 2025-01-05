@@ -8,14 +8,14 @@ LOG_FILE="/home/ad/apps/font_hyper_manager/log.txt"
 ###########################################
 
 ## Load pyenv automatically
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 
 ## Activate the virtual environment
 #source /home/ad/path/to/venv/bin/activate
-pyenv activate envb
+#pyenv activate envb
 ###########################################
 
 
