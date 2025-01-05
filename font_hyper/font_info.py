@@ -55,9 +55,9 @@ class FontInfo:
                 if record.nameID == 4:  # Full font name
                     name = record.string.decode('utf-8', errors='ignore')
                     break
-            self.font_info = name if name else "No description available."
+            self.font_info = name if name else "Not avail."
         except Exception:
-            self.font_info = "No description available."
+            self.font_info = "Not avail."
 
     def extract_license_info(self):
         """Extracts license information from the font file."""
@@ -71,9 +71,9 @@ class FontInfo:
                 if record.nameID == 13:  # License Description
                     license = record.string.decode('utf-8', errors='ignore')
                     break
-            self.license = license if license else "No license information available."
+            self.license = license if license else "Not avail."
         except Exception:
-            self.license = "No license information available."
+            self.license = "Not avail."
 
     def to_dict(self):
         return {

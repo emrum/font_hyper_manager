@@ -70,7 +70,8 @@ def is_user_font(font_path, font_manager):
 def entry_field_has_focus(root):
     """Check if any Entry widget currently has focus."""
     focused = root.focus_get()
-    return isinstance(focused, tk.Entry)
+    return isinstance(focused, (tk.Entry, ttk.Entry))  # Check for both tk and ttk Entry widgets
+    
 
 def focus_next(event):
     """Move focus to the next widget in tab order."""

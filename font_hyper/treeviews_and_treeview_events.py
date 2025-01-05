@@ -587,7 +587,9 @@ class TreeviewManager:
             category_label = self.categories_treeview.item(item, 'values')[2]
             
             # Set default path for file dialog
-            default_path = os.path.expanduser("~/.config/font_hyper/category_icons")
+            #default_path = os.path.expanduser("~/.config/font_hyper/category_icons")
+            from .path_config import get_config_path
+            default_path = os.path.join (get_config_path() , "category_icons/")
             os.makedirs(default_path, exist_ok=True)
             
             # Show file dialog

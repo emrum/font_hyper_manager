@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="/home/ad/apps/font_hyper_manager/log.txt"
+LOG_FILE="log.txt"
 
 
 
@@ -20,13 +20,13 @@ LOG_FILE="/home/ad/apps/font_hyper_manager/log.txt"
 
 
 # Set the environment variables
-export PYTHONPATH=$PYTHONPATH:$HOME/apps/font_hyper_manager
+#export PYTHONPATH=$PYTHONPATH:$HOME/apps/font_hyper_manager
 
 # Python code to execute
 python_code="
 import sys
 sys.path.append('.')
-#sys.path.append('..')
+sys.path.append('..')
 
 import font_hyper.main_a1 as mod
 
@@ -35,7 +35,7 @@ mod.main()
 "
 
 # Navigate to the directory
-cd  $HOME/apps/font_hyper_manager
+#cd  $HOME/apps/font_hyper_manager
 
 # Execute the Python code and log output
 python3 -c "$python_code" > $LOG_FILE 2>&1
