@@ -18,11 +18,14 @@ class StateManager:
         self.gui = gui
         self.root = gui.root
         self.font_manager = gui.font_manager
-        self.config_dir = os.path.expanduser("~/.config/font_hyper")
+        
+        # Update to use path_config
+        from .path_config import get_config_path
+        self.config_dir = get_config_path()
         self.saves_dir = os.path.join(self.config_dir, "saves")
         self.contents_file = os.path.join(self.config_dir, "contents.json")
         os.makedirs(self.saves_dir, exist_ok=True)
-
+        
     def save_state(self):
         """Saves the current application state to contents.json."""
         try:

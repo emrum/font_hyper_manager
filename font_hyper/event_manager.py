@@ -547,7 +547,7 @@ class EventManager:
 
                 # Check system/user font status
                 is_sys_font = is_system_font(font_path)
-                is_user = check_user_font(font_path)  # Use the aliased import
+                is_user = check_user_font(font_path, self.font_manager)  # Pass font_manager instance
 
                 # Apply hide flags
                 should_hide = False
@@ -557,7 +557,7 @@ class EventManager:
                     should_hide = True
 
                 # Apply search filter
-                if query and query not in font_name and query not in font_file:
+                if query and query not in font_name and query not in font_file and query not in font_path:
                     should_hide = True
 
                 if not should_hide:
@@ -577,7 +577,7 @@ class EventManager:
         except Exception as e:
             traceback.print_exc()
             logger.error(f"Error filtering fonts: {str(e)}")
-
+            
         
     def clear_search(self):
         """Clears the search entry and resets filters."""

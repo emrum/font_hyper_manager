@@ -21,7 +21,7 @@ using a graphical interface built with Tkinter and FreeType.
 
 
 
-## using it
+## Using it
 
 - first click "show paths"
 - in the menu/tools/ add default font paths (system dependent)
@@ -31,6 +31,11 @@ using a graphical interface built with Tkinter and FreeType.
 - install category
 - in the app, press F1 or F2 for more help info
 
+
+## Stat
+
+- more than 4000 lines of code ~ 170 kB
+- w.time ~ 2 weeks
 
 ## License
 GPL v3

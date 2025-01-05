@@ -88,7 +88,8 @@ class FontHyperGUI:
 
     def setup_config_directories(self):
         """Sets up necessary configuration directories."""
-        self.config_dir = os.path.expanduser("~/.config/font_hyper")
+        from .path_config import get_config_path
+        self.config_dir = get_config_path()
         self.saves_dir = os.path.join(self.config_dir, "saves")
         self.contents_file = os.path.join(self.config_dir, "contents.json")
         os.makedirs(self.saves_dir, exist_ok=True)

@@ -2,10 +2,24 @@
 
 import os
 
-# path containing font_hyper sub directory and run.sh
-font_hyper_module_path = "~/apps/font_hyper_manager/"
-#font_hyper_module_path = ""
 
+# path to this file
+module_file = os.path.abspath(__file__)
+# path to directory
+module_path = os.path.dirname(module_file)
+
+## path containing font_hyper sub directory and run.sh
+## compute relative:
+font_hyper_module_path = os.path.join( module_path, "../")
+font_hyper_module_path = os.path.abspath (font_hyper_module_path)
+## or set directly:
+#font_hyper_module_path = "~/apps/font_hyper_manager/" # TODO: make cross platform
+##
+print ( f"font_hyper , assumed installation directory: {font_hyper_module_path}") 
+
+
+home_dir = os.path.expanduser('~')  # TODO: make cross platform
+print (f"assumed user directory base: {home_dir}")
 
 # Font installation paths by platform
 font_install_path_windows = '~/AppData/Local/Microsoft/Windows/Fonts'
@@ -13,6 +27,12 @@ font_install_path_mac = '~/Library/Fonts'
 font_install_path_linux = '~/.local/share/fonts/font_hyper'
 font_install_path_android = '/data/fonts'
 font_install_path_bsd = '~/.local/share/fonts'
+
+#############
+## IMPORTANT: the font_install_path should not be a sub-path of
+## font_sys_paths lists (nor font_manager.user_paths lists), 
+## nor be included in any these lists
+## obviously we want no recursion, where install path is equal to source path
 
 # System font search paths by platform
 font_sys_paths_windows = [

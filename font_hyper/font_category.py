@@ -13,6 +13,8 @@ import base64
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
+
 class FontCategory:
     """
     Represents a category of fonts with associated metadata and preview capabilities.
@@ -43,7 +45,10 @@ class FontCategory:
         self.preview_image_size = (0, 0)
         self.preview_font_size = 24  # The font size used for rendering the preview image
         self.is_installed = False  # Set to true if the font category was installed, or false if removed
-
+        
+        # Update to use path_config
+        from .path_config import get_config_path
+        self.config_dir = get_config_path()  # Get platform-specific config path
 
     @property
     def category_icon(self):
@@ -61,7 +66,8 @@ class FontCategory:
         """Loads the category icon from file."""
         try:
             if self.category_icon_file:
-                config_dir = os.path.expanduser("~/.config/font_hyper")
+                from .path_config import get_config_path
+                config_dir = get_config_path()
                 icon_path = os.path.join(config_dir, "category_icons", self.category_icon_file)
                 if os.path.exists(icon_path):
                     # Load full size icon (64x64) for storage
@@ -233,8 +239,9 @@ class FontCategory:
             if not file_path or not os.path.exists(file_path):
                 return False
 
-            # Get paths
-            config_dir = os.path.expanduser("~/.config/font_hyper")
+            # Get paths using path_config
+            from .path_config import get_config_path
+            config_dir = get_config_path()
             icons_dir = os.path.join(config_dir, "category_icons")
             os.makedirs(icons_dir, exist_ok=True)
 
