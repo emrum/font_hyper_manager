@@ -242,7 +242,7 @@ F2 - Keyboard Shortcuts
         text = """
 Font Hyper Manager
 
-Version: 2025.01.03
+Version: 2025.01.04
 A powerful font management tool for Linux systems.
 
 Features:
